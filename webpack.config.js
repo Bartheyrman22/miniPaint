@@ -53,5 +53,10 @@ module.exports = {
 	devServer: {
 		contentBase: "./",
 		compress: true,
+        host: "0.0.0.0",
+        watchOptions: {
+            poll: 3000
+        },
+        watchContentBase: true
 	}
 };
